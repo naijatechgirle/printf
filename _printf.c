@@ -41,6 +41,10 @@ int _printf(const char *format, ...)
 			_putchar('%');
 			i++;
 		}
+		else if ((format[i + 1] == 'd') || (format[i + 1] == 'i')){
+			_our_int(va_arg(args, int));
+			i++;
+		}
 		i_val += 1;
 	}
 	return (i_val);
