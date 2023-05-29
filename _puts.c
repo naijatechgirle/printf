@@ -18,7 +18,8 @@ int _puts(char *s)
 		while (s[hk] != '\0')
 		{
 			_putchar(s[hk]);
-			i_val++;
+			i_val += 1;
+			hk++;
 		}
 	}
 	return (i_val);
