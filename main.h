@@ -8,7 +8,7 @@
 
 /* function prototypes */
 int _printf(const char *format, ...);
-int _puts(char *s)
+int _puts(char *s);
 int _putchar(char z);
 int _my_puts(char *string);
 void _our_int(int num);
