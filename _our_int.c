@@ -14,7 +14,7 @@
  */
 void _our_int(int num)
 {
-	int h, i_val;
+	int h;
 
 	if (num == 0)
 		return;
