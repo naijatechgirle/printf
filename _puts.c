@@ -13,7 +13,7 @@ int _puts(char *string)
 {
 	int hk = 0, i_val = 0;
 
-	if (string != NULL)
+	if (string)
 	{
 		while (string[hk] != '\0')
 		{
