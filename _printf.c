@@ -34,14 +34,15 @@ int _printf(const char *format, ...)
 			int i_value = _puts(va_arg(args, char *));
 
 			i++;
-			i_val += (i_value - 1);
+			i_val += i_value;
 		}
 		else if (format[i + 1] == '%')
 		{
 			_putchar('%');
 			i++;
 		}
-		else if ((format[i + 1] == 'd') || (format[i + 1] == 'i')){
+		else if ((format[i + 1] == 'd') || (format[i + 1] == 'i'))
+		{
 			_our_int(va_arg(args, int));
 			i++;
 		}

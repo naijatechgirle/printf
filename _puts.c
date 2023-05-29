@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _puts - main function that outputs string
- * @s: string to be printed
+ * @string: string to be printed
  *
  * Description: string to be printed this function takes a
  * null termainating string and outputs it
@@ -13,7 +13,7 @@ int _puts(char *string)
 {
 	int hk = 0, i_val = 0;
 
-	if (string)
+	if (string != NULL)
 	{
 		while (string[hk] != '\0')
 		{
