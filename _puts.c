@@ -9,15 +9,15 @@
  * Return: 0 on success
  */
 
-int _puts(char *s)
+int _puts(char *string)
 {
 	int hk = 0, i_val = 0;
 
-	if (s)
+	if (string)
 	{
-		while (s[hk] != '\0')
+		while (string[hk] != '\0')
 		{
-			_putchar(s[hk]);
+			_putchar(string[hk]);
 			i_val += 1;
 			hk++;
 		}
